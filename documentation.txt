@@ -1,0 +1,59 @@
+/*
+1. venv\Scripts\activate   
+2. python app.py
+
+3. To freeze requirements = pip freeze > requirements.txt
+
+--
+Here is the link to the OneDrive folder where the excel file is stored online and allowed to interact with MS Graph API: https://singlepayercost-my.sharepoint.com/personal/jacob_singlepayercost_onmicrosoft_com/_layouts/15/onedrive.aspx
+The account name is  jacob@singlepayercost.onmicrosoft.com and the password is mHUA0M2GUZkF
+----
+
+--
+To get id of files in one drive - 
+login using Jacob Account and then goto inderive section
+https://developer.microsoft.com/en-us/graph/graph-explorer
+--
+
+
+--
+pip install -r requirements.txt
+--
+
+====
+questions
+    SP Plan - C3
+    HH Premium - C4
+    Timeframe - C5
+    Employer premium contribution - C6
+    or, Type of Work - C7
+    OOP spending last year - C8
+    OOP last year -- long-term care - C9
+    Household size - C10
+    Household annual income - C11
+    Deductible - C12
+    Share of cost hospital - C13
+    $ or % - C14
+    Annual OOP cap - C15
+    Email - C16
+    Permission to save answers - C17
+
+
+    params = { spPlan: 'California Single Payer (SB 562, 2018)', hpPremium: '3600', timeframe: 'Per Year', epc: '7500', typeOfWork: '', oop: '850', oopLongTerm: '0', householdSize: '2', householdIncome: '125000', deductible: '2000', shareOfCostHospital: '10', shareOfCostHospitalType: '%', annualOop: '7000' };
+
+//when user submits - 
+ 1. check consent and Email
+ 2. (a)If consent given -> store input data and retrieve uId
+	(b)Send uId also to recieve from response
+	(c)If resposnse in 200 -> update results
+			|-> Update couldn't fetch results
+
+	(b) Don't do anything, just proceed...
+
+
+a SQLAlchemy.create_all() and SQLAlchemy.drop_all() methods to create and drop tables according to the models.
+
+
+//MySql DB
+singlePayer@123
+*/
